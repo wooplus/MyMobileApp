@@ -55,7 +55,7 @@ function appendTodoThingsEl(item) {
   newEl.textContent = itemValue;
 
   newEl.addEventListener("click", function () {
-    let exactLocationOfItemInDB = ref(database, `todoThings/${itemID}`);
+    let exactLocationOfItemInDB = ref(database, `bryanLists/${itemID}`);
     remove(exactLocationOfItemInDB);
   });
 
